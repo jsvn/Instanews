@@ -1,0 +1,114 @@
+// @import 'variables';
+@import 'mixin';
+@import 'reset';
+@import 'fonts';
+@import 'variable';
+
+header {}
+
+em {}
+
+span {
+    text-transform: uppercase;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.nav {
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.logo {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.sectiontext {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.txt {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 50px;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    font-size: 16px;
+    position: relative;
+}
+
+.copy p {
+    color: #c2c2c2;
+    padding: 60px 20px;
+    font-family: 'open_sans';
+    font-weight: normal;
+    font-style: normal;
+    margin: 100px 0;
+    text-align: center;
+}
+/*--------------------------------------------------------------------------Breakpoints*/
+@media screen and (min-width: 600px) {
+    html {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .logo {
+        padding-top: 150px;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .bth {
+        flex-direction: row;
+        margin-top: 125px;
+    }
+
+    footer {
+        font-size: 16px;
+        position: relative;
+    }
+}
+/*--------------------------------------------------------------------------Breakpoints*/
+/*--------max container is used to set width on certain elements----------*/
+@media all and (min-width: 1000px) {
+    .container {
+        
+    }
+}
