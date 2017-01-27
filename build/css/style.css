@@ -97,7 +97,8 @@ body {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 125px; }
+  margin-top: 125px;
+  box-shadow: border box; }
 
 .logo {
   -ms-flex-item-align: center;
@@ -107,6 +108,7 @@ body {
 
 .sectiontext {
   text-align: center;
+  padding: 0 0 10px 0;
   font-size: 1rem;
   color: white; }
 
@@ -122,6 +124,9 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.sections {
+  font-size: 1.1rem; }
 
 footer {
   font-size: 16px;
@@ -165,3 +170,16 @@ footer {
 
 /*--------------------------------------------------------------------------Breakpoints*/
 /*--------max container is used to set width on certain elements----------*/
+@media all and (min-width: 1000px) {
+  .body {
+    margin: 0 auto; }
+  .logo {
+    max-width: 200px; }
+  .container {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-left: 30px; }
+  .copy p {
+    position: absolute; }
+  .footer {
+    text-align: left; } }

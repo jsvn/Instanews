@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 125px;
+    box-shadow: border box;
 }
 
 .logo {
@@ -40,6 +41,7 @@ body {
 
 .sectiontext {
     text-align: center;
+    padding: 0 0 10px 0;
     font-size: 1rem;
     color: white;
 }
@@ -57,6 +59,10 @@ body {
     justify-content: center;
 }
 
+.sections {
+  font-size: 1.1rem;
+
+}
 footer {
     font-size: 16px;
     position: relative;
@@ -108,7 +114,24 @@ footer {
 /*--------------------------------------------------------------------------Breakpoints*/
 /*--------max container is used to set width on certain elements----------*/
 @media all and (min-width: 1000px) {
-    .container {
-        
+
+.body{
+  margin: 0 auto;
+
+}
+.logo{
+  max-width: 200px;
+}
+.container {
+    justify-content: flex-start;
+    padding-left: 30px;
     }
+
+.copy p{
+  position:absolute;
+}
+
+.footer{
+  text-align: left;
+}
 }
