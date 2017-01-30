@@ -1,6 +1,7 @@
 $(function() {
 
     $('.select').on('change', function() {
+          $( '.loader' ).show();
 
         var userInput = $('.select').val();
         console.log(userInput);
@@ -13,6 +14,8 @@ $(function() {
                 method: 'GET',
               })
               .done(function(data) {
+              $( '.loader' ).hide();
+              
               var $data = data.results.filter (function (item){
               return item.multimedia.length;
               }).splice(0, 12);
@@ -25,6 +28,9 @@ $(function() {
                     nytData += value.abstract;
                     nytPicture = value.multimedia[4].url
                     nytData += '<li>' + '<img src=' + nytPicture + '/>' + '/>'>
+                      console.log(nytData);
+                      console.log(nytPicture);
+                      console.log(item, value);
                     $(".selectlist").append(nytData);
                     // console.log(value)
                 });
