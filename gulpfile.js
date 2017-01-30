@@ -63,7 +63,6 @@ gulp.task('lint', function(){
         .pipe(plumber(plumberErrorHandler))
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
 });
 
 gulp.task('default', ['watch', 'browser-Sync'])
