@@ -3,6 +3,7 @@ $(function() {
     $('.select').on('change', function() {
     $('.navcontainer').addClass('container_small').removeClass('navcontainer');
     $('.logo').addClass('logo_small').removeClass('logo');
+    // $('.select').addClass('select_sm').removeClass('select');
 
           $( '.loader' ).show();
 

@@ -85,6 +85,9 @@ li {
   -ms-flex-direction: row;
       flex-direction: row; }
 
+.loader {
+  size: 20px; }
+
 span {
   text-transform: uppercase; }
 
@@ -96,7 +99,9 @@ body {
   height: 100vh;
   -ms-flex-direction: column;
       flex-direction: column;
-  line-height: 1; }
+  line-height: 1;
+  font-size: 16px;
+  font-family: 'open_sans'; }
 
 .nav {
   margin-top: 40px; }
@@ -116,13 +121,17 @@ body {
   padding: 0px; }
 
 .nav-container {
-  height: 100px; }
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
 
 .logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 20px; }
+  height: auto; }
 
 .logo_small {
   height: 80px;
@@ -142,7 +151,10 @@ body {
 
 .select {
   font-size: 1rem;
-  margin-left: 140px; }
+  margin: 0 100px 0 100px; }
+
+.select_sm {
+  font-size: 30px; }
 
 .selectlist {
   width: 100%;
@@ -184,7 +196,8 @@ footer {
   font-family: 'open_sans';
   font-weight: normal;
   font-style: normal;
-  text-align: center; }
+  text-align: center;
+  margin-top: 100px; }
 
 /*--------------------------------------------------------------------------Breakpoints*/
 @media screen and (min-width: 600px) {
@@ -201,20 +214,18 @@ footer {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    margin-top: 60px; }
+    margin-top: 60px;
+    box-sizing: border-box; }
   .container_small {
     height: 100px; }
+  .nav {
+    margin-top: 200px; }
   .li {
     width: 50%; }
   .picture {
     max-width: 50%; }
   .select {
-    margin-left: 0px;
-    width: 100%; }
-  .bth {
-    -ms-flex-direction: row;
-        flex-direction: row;
-    margin-top: 125px; }
+    margin-left: 0px; }
   footer {
     font-size: 16px;
     position: relative; } }

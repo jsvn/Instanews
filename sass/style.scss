@@ -18,6 +18,10 @@ li{
   // width:100%;
 }
 
+.loader {
+  size: 20px;
+}
+
 span {
     text-transform: uppercase;
 }
@@ -30,6 +34,8 @@ body {
     height: 100vh;
     flex-direction: column;
     line-height: 1;
+    font-size: 16px;
+    font-family: 'open_sans'
 
 }
 
@@ -50,13 +56,16 @@ body {
 }
 
 .nav-container{
-height: 100px;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
 }
 
 
 .logo {
-    align-self: center;
-    margin-top: 20px;
+  height: auto;
 }
 
 .logo_small{
@@ -80,10 +89,13 @@ height: 100px;
 
 .select {
     font-size: 1rem;
-    margin-left: 140px;
+    margin: 0 100px 0 100px;
 
 }
+.select_sm {
+  font-size: 30px;
 
+}
 .selectlist{
   width: 100%;
   display: flex;
@@ -133,8 +145,8 @@ footer {
     font-family: 'open_sans';
     font-weight: normal;
     font-style: normal;
-    // margin: 100px 0;
     text-align: center;
+    margin-top: 100px;
 }
 /*--------------------------------------------------------------------------Breakpoints*/
 @media screen and (min-width: 600px) {
@@ -146,8 +158,7 @@ footer {
         width: 100%;
         padding-top: 150px;
         max-width: 150px;
-        // width: 40%;
-        // height: auto;
+
     }
 
 
@@ -156,12 +167,16 @@ footer {
         justify-content: center;
         align-items: center;
         margin-top: 60px;
+        box-sizing: border-box;
     }
 
     .container_small {
       height: 100px;
     }
 
+ .nav{
+   margin-top: 200px;
+ }
 
 .li{
     // flex: 0 1 50%;
@@ -174,13 +189,9 @@ footer {
 
    .select{
    margin-left: 0px;
-   width: 100%;
+
     }
 
-    .bth {
-        flex-direction: row;
-        margin-top: 125px;
-    }
 
     footer {
         font-size: 16px;
@@ -212,7 +223,6 @@ footer {
 
 .picture{
   max-width: 25%;
-
 
 }
 
