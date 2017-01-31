@@ -179,18 +179,12 @@ footer {
  }
 
 .li{
-    // flex: 0 1 50%;
     width: 50%
 }
 
     .picture{
         max-width: 50%;
       }
-
-   .select{
-   margin-left: 0px;
-
-    }
 
 
     footer {
@@ -212,6 +206,13 @@ footer {
 .container {
     justify-content: flex-start;
     }
+
+.nav-container{
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+
 
     .li{
         flex: 0 1 25%;
