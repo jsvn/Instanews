@@ -1,6 +1,9 @@
 $(function() {
 
     $('.select').on('change', function() {
+    $('.navcontainer').addClass('container_small').removeClass('navcontainer');
+    $('.logo').addClass('logo_small').removeClass('logo');
+
           $( '.loader' ).show();
 
         var userInput = $('.select').val();
@@ -15,23 +18,27 @@ $(function() {
               })
               .done(function(data) {
               $( '.loader' ).hide();
-              
+                      $( ".selectlist" ).empty();
               var $data = data.results.filter (function (item){
-              return item.multimedia.length;
+              return item.multimedia.length !== 0;
               }).splice(0, 12);
                 // console.log(data);
                 //do stuff with the data
                 // console.log(data);
                 // if (multimedia.length > 0) {
+
+
                 $.each($data, function(item, value) {
                     var nytData = '';
-                    nytData += value.abstract;
-                    nytPicture = value.multimedia[4].url
-                    nytData += '<li>' + '<img src=' + nytPicture + '/>' + '/>'>
+
+                    nytData += '<li class="picture" style="background-image: url(' + value.multimedia[4].url + ')">';
+                    nytData += '<a href="' + value.url + '"><div class="article-inner"></div></a>';
+                    nytData +='<p class="abstract">' + value.abstract + '</p>' + '</li>';
+
                       console.log(nytData);
-                      console.log(nytPicture);
                       console.log(item, value);
-                    $(".selectlist").append(nytData);
+                    $('.selectlist').append(nytData);
+
                     // console.log(value)
                 });
             })
