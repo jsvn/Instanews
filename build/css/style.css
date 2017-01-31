@@ -86,7 +86,8 @@ li {
       flex-direction: row; }
 
 .loader {
-  size: 20px; }
+  height: 10%;
+  width: 10%; }
 
 span {
   text-transform: uppercase; }
@@ -217,9 +218,13 @@ footer {
     margin-top: 60px;
     box-sizing: border-box; }
   .container_small {
-    height: 100px; }
+    height: 100px;
+    margin-top: 20px; }
   .nav {
     margin-top: 200px; }
+  .nav_small {
+    margin-top: 0;
+    margin-left: -800px; }
   .li {
     width: 50%; }
   .picture {
@@ -238,6 +243,11 @@ footer {
   .container {
     -ms-flex-pack: start;
         justify-content: flex-start; }
+  .container_small {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    height: 100px;
+    margin-top: 0px; }
   .nav-container {
     -ms-flex-pack: start;
         justify-content: flex-start;

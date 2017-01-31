@@ -19,7 +19,8 @@ li{
 }
 
 .loader {
-  size: 20px;
+  height: 10%;
+  width: 10%;
 }
 
 span {
@@ -172,10 +173,16 @@ footer {
 
     .container_small {
       height: 100px;
+      margin-top: 20px;
     }
 
  .nav{
    margin-top: 200px;
+ }
+
+ .nav_small{
+   margin-top: 0;
+   margin-left: -800px;
  }
 
 .li{
@@ -207,12 +214,17 @@ footer {
     justify-content: flex-start;
     }
 
+    .container_small{
+      justify-content: flex-start;
+        height: 100px;
+        margin-top: 0px;
+
+    }
+
 .nav-container{
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-
-
 
     .li{
         flex: 0 1 25%;
