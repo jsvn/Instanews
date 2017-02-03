@@ -102,7 +102,7 @@ body {
       flex-direction: column;
   line-height: 1;
   font-size: 16px;
-  font-family: 'open_sans'; }
+  font-family: 'open_sans', Arial, Serif; }
 
 .nav {
   margin-top: 40px; }
@@ -200,7 +200,7 @@ footer {
   text-align: center;
   margin-top: 100px; }
 
-/*--------------------------------------------------------------------------Breakpoints*/
+/*--------------------------------------------------------------------------Tablet Breakpoint*/
 @media screen and (min-width: 600px) {
   html {
     width: 100%; }
@@ -233,7 +233,7 @@ footer {
     font-size: 16px;
     position: relative; } }
 
-/*--------------------------------------------------------------------------Breakpoints*/
+/*--------------------------------------------------------------------------Desktop Breakpoint*/
 /*--------max container is used to set width on certain elements----------*/
 @media all and (min-width: 1000px) {
   .body {

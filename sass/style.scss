@@ -5,17 +5,13 @@
 @import 'variable';
 
 header {width: 100%;
-height: auto;
+  height: auto;
 }
-
-em {}
 
 li{
   position: relative;
   display: flex;
   flex-direction: row;
-  // background-size: cover;
-  // width:100%;
 }
 
 .loader {
@@ -24,44 +20,43 @@ li{
 }
 
 span {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 body {
-    background-color: black;
-    width: 100%;
-    font-size: 16px;
-    color: #ffffff;
-    height: 100vh;
-    flex-direction: column;
-    line-height: 1;
-    font-size: 16px;
-    font-family: 'open_sans'
-
+  background-color: black;
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  height: 100vh;
+  flex-direction: column;
+  line-height: 1;
+  font-size: 16px;
+  font-family: 'open_sans', Arial, Serif;
 }
 
 .nav {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 125px;
-    box-shadow: border box;
-    height: auto;
-    padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 125px;
+  box-shadow: border box;
+  height: auto;
+  padding: 0px;
 
 }
 
 .nav-container{
-height: auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 
@@ -70,27 +65,27 @@ width: 100%;
 }
 
 .logo_small{
- height: 80px;
- margin-right: 700px;
+  height: 80px;
+  margin-right: 700px;
 }
 
 .sectiontext {
-    text-align: center;
-    padding: 0 0 10px 0;
-    color: white;
+  text-align: center;
+  padding: 0 0 10px 0;
+  color: white;
 }
 
 .txt {
-    margin-top: 10px;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px 50px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 50px;
 }
 
 .select {
-    font-size: 1rem;
-    margin: 0 100px 0 100px;
+  font-size: 1rem;
+  margin: 0 100px 0 100px;
 
 }
 .select_sm {
@@ -108,13 +103,11 @@ width: 100%;
   display: block;
   width: 100%;
   height: 380px;
-  // max-width: 50%;
   background-size: cover;
   background-position: 50%;
 }
 
 .picture a{
-  //display: block;
   overflow: hidden;
 }
 
@@ -134,112 +127,120 @@ width: 100%;
 }
 
 footer {
-    font-size: 16px;
-    position: relative;
-    display: block;
+  font-size: 16px;
+  position: relative;
+  display: block;
 
 }
 
 .copy p {
-    color: #c2c2c2;
-    padding: 20px;
-    font-family: 'open_sans';
-    font-weight: normal;
-    font-style: normal;
-    text-align: center;
-    margin-top: 100px;
+  color: #c2c2c2;
+  padding: 20px;
+  font-family: 'open_sans';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  margin-top: 100px;
 }
-/*--------------------------------------------------------------------------Breakpoints*/
+
+
+/*--------------------------------------------------------------------------Tablet Breakpoint*/
+
+
 @media screen and (min-width: 600px) {
-    html {
-        width: 100%;
-    }
+   
+  html {
+    width: 100%;
+  }
 
-    .logo {
-        width: 100%;
-        padding-top: 150px;
-        max-width: 150px;
+  .logo {
+    width: 100%;
+    padding-top: 150px;
+    max-width: 150px;
+  }
 
-    }
+
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    box-sizing: border-box;
+  }
+
+  .container_small {
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  .nav{
+    margin-top: 200px;
+  }
+
+  .nav_small{
+    margin-top: 0;
+    margin-left: -800px;
+  }
+
+  .li{
+      width: 50%
+  }
+
+  .picture{
+    max-width: 50%;
+  }
 
 
-    .container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 60px;
-        box-sizing: border-box;
-    }
-
-    .container_small {
-      height: 100px;
-      margin-top: 20px;
-    }
-
- .nav{
-   margin-top: 200px;
- }
-
- .nav_small{
-   margin-top: 0;
-   margin-left: -800px;
- }
-
-.li{
-    width: 50%
+  footer {
+    font-size: 16px;
+    position: relative;
+  }
 }
 
-    .picture{
-        max-width: 50%;
-      }
 
-
-    footer {
-        font-size: 16px;
-        position: relative;
-    }
-}
-/*--------------------------------------------------------------------------Breakpoints*/
+/*--------------------------------------------------------------------------Desktop Breakpoint*/
 /*--------max container is used to set width on certain elements----------*/
+
+
 @media all and (min-width: 1000px) {
 
-.body{
-  margin: 0 auto;
+  .body{
+    margin: 0 auto;
+  }
 
-}
-.logo{
-  max-width: 200px;
-}
-.container {
+  .logo{
+    max-width: 200px;
+  }
+
+  .container {
     justify-content: flex-start;
-    }
+  }
 
-    .container_small{
-      justify-content: flex-start;
-        height: 100px;
-        margin-top: 0px;
+  .container_small{
+    justify-content: flex-start;
+    height: 100px;
+    margin-top: 0px;
+  }
 
-    }
+  .nav-container{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 
-.nav-container{
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
+  .li{
+    flex: 0 1 25%;
+    max-width: 25%
+  }
 
-    .li{
-        flex: 0 1 25%;
-        max-width: 25%
-    }
-.copy p{
-  position:absolute;
-}
+  .copy p{
+    position:absolute;
+  }
 
-.picture{
-  max-width: 25%;
+  .picture{
+    max-width: 25%;
+  }
 
-}
-
-.footer{
-  text-align: left;
-}
+  .footer{
+    text-align: left;
+  }
 }
