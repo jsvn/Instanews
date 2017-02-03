@@ -86,8 +86,9 @@ li {
       flex-direction: row; }
 
 .loader {
-  height: 10%;
-  width: 10%; }
+  width: 40px;
+  height: 40px;
+  margin: 0 auto; }
 
 span {
   text-transform: uppercase; }
