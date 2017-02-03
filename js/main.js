@@ -1,14 +1,20 @@
 $(function() {
 
+    var $selectBox = $(' .select ');
+    var $navContainer = $( '.navcontainer' );
+    var $logo = $( '.logo' );
+    var $navBar = $( '.nav' );
+    var $loaderImage = $( '.loader' );
+    var $selectList = $( '.selectlist' );
 
-    $('.select').on('change', function() {
-    $('.navcontainer').addClass('container_small').removeClass('navcontainer');
-    $('.logo').addClass('logo_small').removeClass('logo');
-    $('.nav').addClass('nav_small').removeClass('nav');
+    $selectBox.on('change', function() {
+    $navContainer.addClass('container_small').removeClass('navcontainer');
+    $logo.addClass('logo_small').removeClass('logo');
+    $navBar.addClass('nav_small').removeClass('nav');
 
-    $( '.loader' ).show();
+    $loaderImage.show();
 
-    var userInput = $('.select').val();
+    var userInput = $selectBox.val();
     var url = 'https://api.nytimes.com/svc/topstories/v2/' + userInput + '.json';
         url += '?' + $.param({
           'api-key': '3a2c9ea10b5e4ee99a1f1602314e16f0'
@@ -17,8 +23,8 @@ $(function() {
             url: url,
             method: 'GET',
           }).done(function(data) {
-              $( '.loader' ).hide();
-              $( '.selectlist' ).empty();
+              $loaderImage.hide();
+              $selectList.empty();
               
               var $data = data.results.filter (function (item){
               
@@ -33,7 +39,7 @@ $(function() {
                 nytData += '<a href="' + value.url + '"><div class="article-inner"></div></a>';
                 nytData +='<p class="abstract">' + value.abstract + '</p>' + '</li>';
 
-                $('.selectlist').append(nytData);
+                $selectList.append(nytData);
               });
           }).fail(function(err) {
               throw err;
