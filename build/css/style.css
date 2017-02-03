@@ -130,14 +130,15 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%; }
 
 .logo {
   height: auto; }
 
 .logo_small {
-  height: 80px;
-  margin-right: 700px; }
+  width: 50%; }
 
 .sectiontext {
   text-align: center;
@@ -209,6 +210,10 @@ footer {
     width: 100%;
     padding-top: 150px;
     max-width: 150px; }
+  .logo_small {
+    width: 80px;
+    height: 100px;
+    margin-left: 3rem; }
   .container {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -224,8 +229,8 @@ footer {
   .nav {
     margin-top: 200px; }
   .nav_small {
-    margin-top: 0;
-    margin-left: -800px; }
+    height: 100px;
+    margin-top: 0; }
   .li {
     width: 50%; }
   .picture {

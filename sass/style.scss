@@ -4,7 +4,8 @@
 @import 'fonts';
 @import 'variable';
 
-header {width: 100%;
+header {
+  width: 100%;
   height: auto;
 }
 
@@ -57,6 +58,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -66,8 +68,7 @@ body {
 }
 
 .logo_small{
-  height: 80px;
-  margin-right: 700px;
+  width: 50%;
 }
 
 .sectiontext {
@@ -160,6 +161,12 @@ footer {
     max-width: 150px;
   }
 
+  .logo_small {
+    width: 80px;
+    height: 100px;
+    margin-left: 3rem;
+  }
+
 
   .container {
     flex-direction: row;
@@ -179,12 +186,12 @@ footer {
   }
 
   .nav_small{
+    height: 100px;
     margin-top: 0;
-    margin-left: -800px;
   }
 
   .li{
-      width: 50%
+    width: 50%
   }
 
   .picture{
